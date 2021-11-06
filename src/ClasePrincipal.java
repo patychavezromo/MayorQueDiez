@@ -5,12 +5,19 @@ public class ClasePrincipal
     public static void main(String[] args)
     {
         System.out.println("BIENVENIDO");
-        Scanner teclado=new Scanner(System.in);
-        int a;
         System.out.print("Ingresa un numero : ");
-        a=teclado.nextInt();
-        String valor;
-        valor= Integer.toString(a);
-        System.out.print("El numero ingresado es: "+valor);
+        Scanner teclado=new Scanner(System.in);
+        int a=teclado.nextInt();
+        System.out.println("El numero ingresado es: "+a);
+        if (a < 10) {
+            System.out.println(a + " es menor que 10");
+        }
+        else if (a == 10) {
+            System.out.println(a + " es igual que 10");
+        }
+        else {
+            System.out.println(a + " es mayor que 10");
+        }
+
     }
 }
